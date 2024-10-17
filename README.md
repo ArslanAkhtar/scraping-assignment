@@ -3,7 +3,7 @@
 
 ## Overview
 
-**Scraping JavaScript** is a test project developed to demonstrate web scraping capabilities using JavaScript and TypeScript. The project includes functions to crawl data and generate HTML and CSV files. It adheres to a factory structure to promote modularity and maintainability. The application is strongly typed with TypeScript to enhance code quality and prevent runtime errors.
+**Scraping Assignment** is a test project developed to demonstrate web scraping capabilities using JavaScript and TypeScript. The project includes functions to crawl data and generate HTML and CSV files. It adheres to a factory structure to promote modularity and maintainability. The application is strongly typed with TypeScript to enhance code quality and prevent runtime errors.
 
 ## Table of Contents
 
