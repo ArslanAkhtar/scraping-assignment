@@ -1,7 +1,12 @@
-import { LoginResponse, ListResponse } from "../utils/interface";
+import {
+	LoginResponse,
+	ListResponse,
+	CallServerFunction,
+	UserData,
+} from "../utils/interface";
 import { API } from "../utils/constants";
 
-export const apiCrawler = async (callServer: any) => {
+export const apiCrawler = async (callServer: CallServerFunction) => {
 	try {
 		const loginResponse = (await callServer(API.AuthLogin, {
 			login: "test",
@@ -17,7 +22,7 @@ export const apiCrawler = async (callServer: any) => {
 				access_token
 			)) as ListResponse;
 
-			const extractedData = listResponse.data.list?.map((entry: any) => ({
+			const extractedData = listResponse.data.list?.map((entry: UserData) => ({
 				naam: entry.naam,
 				firstname: entry.firstname,
 				functienaam: entry.functienaam,

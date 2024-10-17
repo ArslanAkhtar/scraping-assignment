@@ -22,7 +22,6 @@ export interface ListResponse {
 		}>;
 	};
 	status: number;
-	headers: any;
 }
 
 export interface UserData {
@@ -31,4 +30,8 @@ export interface UserData {
 	functienaam: string;
 	email: string;
 	adres: string;
+}
+
+export interface CallServerFunction {
+	(api: string, params: object, access_token?: string): Promise<object>;
 }
